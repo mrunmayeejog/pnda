@@ -41,9 +41,8 @@ chmod a+r logstash-offline-plugins-5.2.2.zip
 mv logstash-offline-plugins-5.2.2.zip $STATIC_FILE_DIR/logstash-offline-plugins-5.2.2.zip
 
 if [ "x$DISTRO" == "xrhel" -o "x$DISTRO" == "xcentos" ]; then
-    # if following packages are already available then it will not download the files hence remove packages.
-    yum remove postgresql-libs postgresql postgresql-devel -y
     yum install --downloadonly --downloaddir=$STATIC_FILE_DIR postgresql-libs
     yum install --downloadonly --downloaddir=$STATIC_FILE_DIR postgresql
     yum install --downloadonly --downloaddir=$STATIC_FILE_DIR postgresql-devel
+    yum install postgresql-devel -y
 fi
