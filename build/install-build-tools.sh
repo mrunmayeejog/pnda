@@ -106,7 +106,6 @@ if [ "x${DISTRO}" == "xrhel" -o "x$DISTRO" == "xcentos" ]; then
                    python-devel \
                    python2-pip \
                    ruby-devel \
-                   postgresql-devel \
                    libaio # Needed for Gobblin
 
 elif [[ "${DISTRO}" == "ubuntu" ]]; then
@@ -126,7 +125,6 @@ elif [[ "${DISTRO}" == "ubuntu" ]]; then
                    apt-transport-https \
                    python-pip \
                    ruby-dev \
-                   libpq-dev \
                    libaio1 # Needed for Gobblin
 fi
 
