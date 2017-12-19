@@ -62,3 +62,6 @@ wget
 xfsprogs
 yum-utils
 zip
+postgresql-libs
+postgresql
+postgresql-devel
