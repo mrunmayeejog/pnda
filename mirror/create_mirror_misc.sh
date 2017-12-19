@@ -43,5 +43,5 @@ mv logstash-offline-plugins-5.2.2.zip $STATIC_FILE_DIR/logstash-offline-plugins-
 if [ "x$DISTRO" == "xrhel" -o "x$DISTRO" == "xcentos" ]; then
     yum install postgresql-devel -y
 elif [ "x$DISTRO" == "xubuntu" ]; then
-    apt-get install libpq-dev
+    apt-get install -y libpq-dev
 fi
